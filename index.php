@@ -1,6 +1,6 @@
 <?php
 // Delete before pushing to github
-$servername = "";
+$servername = "localhost";
 $username = "";
 $password = "";
 $dbname = "";
