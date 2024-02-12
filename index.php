@@ -1,5 +1,6 @@
 <?php
-$servername = "localhost";
+// Delete before pushing to github
+$servername = "";
 $username = "";
 $password = "";
 $dbname = "";
@@ -12,6 +13,12 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
+?>
+
+
+<!-- Simple script to show that database is successfully connected
+     Just displays the Member and Recipe Table. -->
+<?php
 //Query to fetch data from a table, for example, `members`
 $sql = "SELECT * FROM Member";
 $result = $conn->query($sql);
